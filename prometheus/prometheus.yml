@@ -1,94 +1,101 @@
 global:
-  scrape_interval: 30s  # Verificación cada 30 segundos
+  scrape_interval: 60s # Verificación cada 60 segundos
 
 scrape_configs:
-  - job_name: 'website_monitoring'
+  # Monitoreo de Disponibilidad HTTP
+  - job_name: "website_monitoring"
     metrics_path: /probe
     params:
-      module: [http_2xx]  # Define el módulo que se usará en Blackbox Exporter
+      module: [http_2xx]
     static_configs:
       - targets:
-        - 'https://siop.jalisco.gob.mx'
-        - 'https://vinsmake.dev'
-        - 'https://myfakesitelol.dev'
-        - 'https://donadoresdeorganos.jalisco.gob.mx'
-        - 'https://portaldirtalento.jalisco.gob.mx'
-        - 'https://sicyt.jalisco.gob.mx'
-        - 'https://sistemadif.jalisco.gob.mx'
-        - 'https://acai.jalisco.gob.mx'
-        - 'https://aire.jalisco.gob.mx'
-        - 'https://atencionmigrantes.jalisco.gob.mx'
-        - 'https://ce.jalisco.gob.mx'
-        - 'https://cgig.jalisco.gob.mx'
-        - 'https://cvcovid.salud.gob.mx'
-        - 'https://escogecuidarte.jalisco.gob.mx'
-        - 'https://filma.jalisco.gob.mx'
-        - 'https://iieg.gob.mx'
-        - 'https://indicadoresdeigualdad.jalisco.gob.mx'
-        - 'https://investinjalisco.com'
-        - 'https://investjal.jalisco.gob.mx'
-        - 'https://mapa.jalisco.gob.mx'
-        - 'https://micrositio.seia.jalisco.gob.mx'
-        - 'https://mimovilidad.jalisco.gob.mx'
-        - 'https://panel.id.jalisco.gob.mx'
-        - 'https://periodicooficial.jalisco.gob.mx'
-        - 'https://plai.mx'
-        - 'https://primeros1000dias.jalisco.gob.mx'
-        - 'https://programamipasaje.jalisco.gob.mx'
-        - 'https://recreadigital.jalisco.gob.mx'
-        - 'https://plataformaeducativa.jalisco.gob.mx'
-        - 'https://registrotenecesitamos.jalisco.gob.mx'
-        - 'https://rppcenlinea.jalisco.gob.mx'
-        - 'https://segurosalud.jalisco.gob.mx'
-        - 'https://simerev.jalisco.gob.mx'
-        - 'https://sisovid.jalisco.gob.mx'
-        - 'https://transparencia.jalisco.gob.mx'
-        - 'https://ventanilladigital.jalisco.gob.mx'
-        - 'https://verificacionresponsable.jalisco.gob.mx'
-        - 'https://version-publica-repd.jalisco.gob.mx'
-        - 'https://visorurbano.jalisco.gob.mx'
-        - 'https://sader.cua.jalisco.gob.mx'
-        - 'https://atm.sader.jalisco.gob.mx'
-        - 'https://panelinclusion.jalisco.gob.mx'
-        - 'https://gisriosantiago.jalisco.gob.mx'
-        - 'https://adminescritorioayuda.jalisco.gob.mx'
-        - 'https://inspeccionsemadet.jalisco.gob.mx'
-        - 'https://panel.nidosdelluvia.jalisco.gob.mx'
-        - 'https://nidosdelluvia.jalisco.gob.mx'
-        - 'https://devportalseajal.jalisco.gob.mx'
-        - 'https://vacunacion.jalisco.gob.mx'
-        - 'https://paneldependencias.jalisco.gob.mx'
-        - 'https://800694836714.signin.aws.amazon.com'
-        - 'https://escritoriodeayuda.jalisco.gob.mx'
-        - 'https://crea.sisemh.jalisco.gob.mx'
-        - 'https://panelperiodico.jalisco.gob.mx'
-        - 'https://covid.jalisco.gob.mx'
-        - 'https://ccescritorioayuda.jalisco.gob.mx'
-        - 'https://cua.fws.jalisco.gob.mx'
-        - 'https://repca.jalisco.gob.mx'
-        - 'https://api.id.jalisco.gob.mx'
-        - 'https://apisecg.jalisco.gob.mx'
-        - 'https://cursosinclusiondigital.jalisco.gob.mx'
-        - 'https://safop.jalisco.gob.mx'
-        - 'https://cgig-git.jalisco.gob.mx'
-        - 'https://app.landbot.io'
-        - 'https://covid-19.jalisco.gob.mx'
-        - 'https://visorsantiago.jalisco.gob.mx'
-        - 'https://simerev-admin.jalisco.gob.mx'
-        - 'https://panel.jalisco.gob.mx'
-        - 'https://red.jalisco.gob.mx'
-        - 'https://owncloud.jalisco.gob.mx'
-        - 'https://transparenciasitgej.jalisco.gob.mx'
-        - 'https://apisecgdev.jalisco.gob.mx'
-        - 'https://rumboalaigualdad.jalisco.gob.mx'
-        - 'https://utiles.jalisco.gob.mx'
-        - 'https://innovacion.jalisco.gob.mx'
-        - 'https://sier.jalisco.gob.mx'
+          - "https://siop.jalisco.gob.mx"
+          - "https://vinsmake.dev"
+          - "https://myfakesitelol.dev"
+          - "https://donadoresdeorganos.jalisco.gob.mx"
+          - "https://portaldirtalento.jalisco.gob.mx"
+          - "https://sicyt.jalisco.gob.mx"
+          - "https://sistemadif.jalisco.gob.mx"
+          - "https://acai.jalisco.gob.mx"
+          - "https://aire.jalisco.gob.mx"
+          - "https://atencionmigrantes.jalisco.gob.mx"
+          - "https://ce.jalisco.gob.mx"
+          - "https://cgig.jalisco.gob.mx"
+          - "https://cvcovid.salud.gob.mx"
+          - "https://escogecuidarte.jalisco.gob.mx"
+          - "https://filma.jalisco.gob.mx"
+          - "https://iieg.gob.mx"
+          - "https://indicadoresdeigualdad.jalisco.gob.mx"
+          - "https://investinjalisco.com"
+          - "https://investjal.jalisco.gob.mx"
+          - "https://mapa.jalisco.gob.mx"
+          - "https://micrositio.seia.jalisco.gob.mx"
+          - "https://mimovilidad.jalisco.gob.mx"
+          - "https://panel.id.jalisco.gob.mx"
+          - "https://periodicooficial.jalisco.gob.mx"
+          - "https://plai.mx"
+          - "https://primeros1000dias.jalisco.gob.mx"
+          - "https://programamipasaje.jalisco.gob.mx"
+          - "https://recreadigital.jalisco.gob.mx"
+          - "https://plataformaeducativa.jalisco.gob.mx"
+          - "https://registrotenecesitamos.jalisco.gob.mx"
+          - "https://rppcenlinea.jalisco.gob.mx"
+          - "https://segurosalud.jalisco.gob.mx"
+          - "https://simerev.jalisco.gob.mx"
+          - "https://sisovid.jalisco.gob.mx"
+          - "https://transparencia.jalisco.gob.mx"
+          - "https://ventanilladigital.jalisco.gob.mx"
+          - "https://verificacionresponsable.jalisco.gob.mx"
+          - "https://version-publica-repd.jalisco.gob.mx"
+          - "https://visorurbano.jalisco.gob.mx"
+          - "https://sader.cua.jalisco.gob.mx"
+          - "https://atm.sader.jalisco.gob.mx"
+          - "https://panelinclusion.jalisco.gob.mx"
+          - "https://gisriosantiago.jalisco.gob.mx"
+          - "https://adminescritorioayuda.jalisco.gob.mx"
+          - "https://inspeccionsemadet.jalisco.gob.mx"
+          - "https://panel.nidosdelluvia.jalisco.gob.mx"
+          - "https://nidosdelluvia.jalisco.gob.mx"
+          - "https://devportalseajal.jalisco.gob.mx"
+          - "https://vacunacion.jalisco.gob.mx"
+          - "https://paneldependencias.jalisco.gob.mx"
+          - "https://800694836714.signin.aws.amazon.com"
+          - "https://escritoriodeayuda.jalisco.gob.mx"
+          - "https://crea.sisemh.jalisco.gob.mx"
+          - "https://panelperiodico.jalisco.gob.mx"
+          - "https://covid.jalisco.gob.mx"
+          - "https://ccescritorioayuda.jalisco.gob.mx"
+          - "https://cua.fws.jalisco.gob.mx"
+          - "https://repca.jalisco.gob.mx"
+          - "https://api.id.jalisco.gob.mx"
+          - "https://apisecg.jalisco.gob.mx"
+          - "https://cursosinclusiondigital.jalisco.gob.mx"
+          - "https://safop.jalisco.gob.mx"
+          - "https://cgig-git.jalisco.gob.mx"
+          - "https://app.landbot.io"
+          - "https://covid-19.jalisco.gob.mx"
+          - "https://visorsantiago.jalisco.gob.mx"
+          - "https://simerev-admin.jalisco.gob.mx"
+          - "https://panel.jalisco.gob.mx"
+          - "https://red.jalisco.gob.mx"
+          - "https://owncloud.jalisco.gob.mx"
+          - "https://transparenciasitgej.jalisco.gob.mx"
+          - "https://apisecgdev.jalisco.gob.mx"
+          - "https://rumboalaigualdad.jalisco.gob.mx"
+          - "https://utiles.jalisco.gob.mx"
+          - "https://innovacion.jalisco.gob.mx"
+          - "https://sier.jalisco.gob.mx"
 
     relabel_configs:
       - source_labels: [__address__]
-        target_label: __param_target  # Define el target real
+        target_label: __param_target # Define el target real
       - source_labels: [__param_target]
-        target_label: instance        # Muestra la URL real en lugar de localhost
+        target_label: instance # Muestra la URL real en lugar de localhost
       - target_label: __address__
-        replacement: 'localhost:9115' # Envía la solicitud al Blackbox Exporter
+        replacement: "blackbox:9115"
+
+        # Recolectar errores como métricas
+    metric_relabel_configs:
+      - source_labels: [probe_http_status_code]
+        regex: ".*"
+        target_label: http_status

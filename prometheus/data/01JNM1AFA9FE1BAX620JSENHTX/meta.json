@@ -1,0 +1,17 @@
+{
+	"ulid": "01JNM1AFA9FE1BAX620JSENHTX",
+	"minTime": 1740412800486,
+	"maxTime": 1740420000000,
+	"stats": {
+		"numSamples": 159819,
+		"numSeries": 1978,
+		"numChunks": 1978
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JNM1AFA9FE1BAX620JSENHTX"
+		]
+	},
+	"version": 1
+}
