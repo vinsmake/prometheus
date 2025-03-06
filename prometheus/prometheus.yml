@@ -9,82 +9,80 @@ scrape_configs:
       module: [http_2xx]
     static_configs:
       - targets:
-          - "https://siop.jalisco.gob.mx"
-          - "https://vinsmake.dev"
-          - "https://myfakesitelol.dev"
-          - "https://donadoresdeorganos.jalisco.gob.mx"
-          - "https://portaldirtalento.jalisco.gob.mx"
-          - "https://sicyt.jalisco.gob.mx"
-          - "https://sistemadif.jalisco.gob.mx"
-          - "https://acai.jalisco.gob.mx"
-          - "https://aire.jalisco.gob.mx"
-          - "https://atencionmigrantes.jalisco.gob.mx"
-          - "https://ce.jalisco.gob.mx"
-          - "https://cgig.jalisco.gob.mx"
-          - "https://cvcovid.salud.gob.mx"
-          - "https://escogecuidarte.jalisco.gob.mx"
-          - "https://filma.jalisco.gob.mx"
-          - "https://iieg.gob.mx"
-          - "https://indicadoresdeigualdad.jalisco.gob.mx"
-          - "https://investinjalisco.com"
-          - "https://investjal.jalisco.gob.mx"
-          - "https://mapa.jalisco.gob.mx"
-          - "https://micrositio.seia.jalisco.gob.mx"
-          - "https://mimovilidad.jalisco.gob.mx"
-          - "https://panel.id.jalisco.gob.mx"
-          - "https://periodicooficial.jalisco.gob.mx"
-          - "https://plai.mx"
-          - "https://primeros1000dias.jalisco.gob.mx"
-          - "https://programamipasaje.jalisco.gob.mx"
-          - "https://recreadigital.jalisco.gob.mx"
-          - "https://plataformaeducativa.jalisco.gob.mx"
-          - "https://registrotenecesitamos.jalisco.gob.mx"
-          - "https://rppcenlinea.jalisco.gob.mx"
-          - "https://segurosalud.jalisco.gob.mx"
-          - "https://simerev.jalisco.gob.mx"
-          - "https://sisovid.jalisco.gob.mx"
-          - "https://transparencia.jalisco.gob.mx"
-          - "https://ventanilladigital.jalisco.gob.mx"
-          - "https://verificacionresponsable.jalisco.gob.mx"
-          - "https://version-publica-repd.jalisco.gob.mx"
-          - "https://visorurbano.jalisco.gob.mx"
-          - "https://sader.cua.jalisco.gob.mx"
-          - "https://atm.sader.jalisco.gob.mx"
-          - "https://panelinclusion.jalisco.gob.mx"
-          - "https://gisriosantiago.jalisco.gob.mx"
-          - "https://adminescritorioayuda.jalisco.gob.mx"
-          - "https://inspeccionsemadet.jalisco.gob.mx"
-          - "https://panel.nidosdelluvia.jalisco.gob.mx"
-          - "https://nidosdelluvia.jalisco.gob.mx"
-          - "https://devportalseajal.jalisco.gob.mx"
-          - "https://vacunacion.jalisco.gob.mx"
-          - "https://paneldependencias.jalisco.gob.mx"
-          - "https://800694836714.signin.aws.amazon.com"
-          - "https://escritoriodeayuda.jalisco.gob.mx"
-          - "https://crea.sisemh.jalisco.gob.mx"
-          - "https://panelperiodico.jalisco.gob.mx"
-          - "https://covid.jalisco.gob.mx"
-          - "https://ccescritorioayuda.jalisco.gob.mx"
-          - "https://cua.fws.jalisco.gob.mx"
-          - "https://repca.jalisco.gob.mx"
-          - "https://api.id.jalisco.gob.mx"
-          - "https://apisecg.jalisco.gob.mx"
-          - "https://cursosinclusiondigital.jalisco.gob.mx"
-          - "https://safop.jalisco.gob.mx"
-          - "https://cgig-git.jalisco.gob.mx"
-          - "https://app.landbot.io"
-          - "https://covid-19.jalisco.gob.mx"
-          - "https://visorsantiago.jalisco.gob.mx"
-          - "https://simerev-admin.jalisco.gob.mx"
-          - "https://panel.jalisco.gob.mx"
-          - "https://red.jalisco.gob.mx"
-          - "https://owncloud.jalisco.gob.mx"
-          - "https://transparenciasitgej.jalisco.gob.mx"
-          - "https://apisecgdev.jalisco.gob.mx"
-          - "https://rumboalaigualdad.jalisco.gob.mx"
-          - "https://utiles.jalisco.gob.mx"
-          - "https://innovacion.jalisco.gob.mx"
-          - "https://sier.jalisco.gob.mx"
+        - "https://acai.jalisco.gob.mx"
+        - "https://adminescritorioayuda.jalisco.gob.mx"
+        - "https://aire.jalisco.gob.mx"
+        - "https://api.id.jalisco.gob.mx"
+        - "https://apisecg.jalisco.gob.mx"
+        - "https://apisecgdev.jalisco.gob.mx"
+        - "https://app.landbot.io"
+        - "https://atencionmigrantes.jalisco.gob.mx"
+        - "https://atm.sader.jalisco.gob.mx"
+        - "https://ccescritorioayuda.jalisco.gob.mx"
+        - "https://ce.jalisco.gob.mx"
+        - "https://cgig-git.jalisco.gob.mx"
+        - "https://cgig.jalisco.gob.mx"
+        - "https://covid-19.jalisco.gob.mx"
+        - "https://covid.jalisco.gob.mx"
+        - "https://crea.sisemh.jalisco.gob.mx"
+        - "https://cua.fws.jalisco.gob.mx"
+        - "https://cursosinclusiondigital.jalisco.gob.mx"
+        - "https://cvcovid.salud.gob.mx"
+        - "https://devportalseajal.jalisco.gob.mx"
+        - "https://donadoresdeorganos.jalisco.gob.mx"
+        - "https://escogecuidarte.jalisco.gob.mx"
+        - "https://escritoriodeayuda.jalisco.gob.mx"
+        - "https://filma.jalisco.gob.mx"
+        - "https://gisriosantiago.jalisco.gob.mx"
+        - "https://iieg.gob.mx"
+        - "https://indicadoresdeigualdad.jalisco.gob.mx"
+        - "https://innovacion.jalisco.gob.mx"
+        - "https://inspeccionsemadet.jalisco.gob.mx"
+        - "https://investinjalisco.com"
+        - "https://investjal.jalisco.gob.mx"
+        - "https://mapa.jalisco.gob.mx"
+        - "https://micrositio.seia.jalisco.gob.mx"
+        - "https://mimovilidad.jalisco.gob.mx"
+        - "https://nidosdelluvia.jalisco.gob.mx"
+        - "https://owncloud.jalisco.gob.mx"
+        - "https://panel.id.jalisco.gob.mx"
+        - "https://panel.jalisco.gob.mx"
+        - "https://panel.nidosdelluvia.jalisco.gob.mx"
+        - "https://paneldependencias.jalisco.gob.mx"
+        - "https://panelinclusion.jalisco.gob.mx"
+        - "https://panelperiodico.jalisco.gob.mx"
+        - "https://periodicooficial.jalisco.gob.mx"
+        - "https://plai.mx"
+        - "https://plataformaeducativa.jalisco.gob.mx"
+        - "https://portaldirtalento.jalisco.gob.mx"
+        - "https://primeros1000dias.jalisco.gob.mx"
+        - "https://programamipasaje.jalisco.gob.mx"
+        - "https://recreadigital.jalisco.gob.mx"
+        - "https://red.jalisco.gob.mx"
+        - "https://registrotenecesitamos.jalisco.gob.mx"
+        - "https://repca.jalisco.gob.mx"
+        - "https://rppcenlinea.jalisco.gob.mx"
+        - "https://rumboalaigualdad.jalisco.gob.mx"
+        - "https://sader.cua.jalisco.gob.mx"
+        - "https://safop.jalisco.gob.mx"
+        - "https://segurosalud.jalisco.gob.mx"
+        - "https://sicyt.jalisco.gob.mx"
+        - "https://sier.jalisco.gob.mx"
+        - "https://simerev-admin.jalisco.gob.mx"
+        - "https://simerev.jalisco.gob.mx"
+        - "https://siop.jalisco.gob.mx"
+        - "https://sisovid.jalisco.gob.mx"
+        - "https://sistemadif.jalisco.gob.mx"
+        - "https://transparencia.jalisco.gob.mx"
+        - "https://transparenciasitgej.jalisco.gob.mx"
+        - "https://utiles.jalisco.gob.mx"
+        - "https://vacunacion.jalisco.gob.mx"
+        - "https://ventanilladigital.jalisco.gob.mx"
+        - "https://verificacionresponsable.jalisco.gob.mx"
+        - "https://version-publica-repd.jalisco.gob.mx"
+        - "https://vinsmake.dev"
+        - "https://visorsantiago.jalisco.gob.mx"
+        - "https://visorurbano.jalisco.gob.mx"
 
 
 
@@ -99,8 +97,305 @@ scrape_configs:
         # Alias
       - source_labels: [__param_target]
         target_label: alias
-        replacement: "Sitio desarrollador"
+        replacement: "Red Jalisco CMS"
+        regex: "https://acai.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Administrador de Consola"
+        regex: "https://adminescritorioayuda.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Aire Jalisco"
+        regex: "https://aire.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "API RENAPO"
+        regex: "https://api.id.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Desconocido"
+        regex: "https://apisecg.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Desconocido"
+        regex: "https://apisecgdev.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Red Jalisco Chatbot"
+        regex: "https://app.landbot.io"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "SAM (Sistema de Atención al Migrante)"
+        regex: "https://atencionmigrantes.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "ATM"
+        regex: "https://atm.sader.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Consola de Agentes"
+        regex: "https://ccescritorioayuda.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Contraloría del Estado"
+        regex: "https://ce.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "GitLab"
+        regex: "https://cgig-git.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Landing CGIG"
+        regex: "https://cgig.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Desconocido"
+        regex: "https://covid-19.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Callcenter COVID (Control de Pruebas)"
+        regex: "https://covid.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "SISEMH"
+        regex: "https://crea.sisemh.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Credencial Única Agropecuaria CUA (FSW)"
+        regex: "https://cua.fws.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Cursos de Inclusión Digital"
+        regex: "https://cursosinclusiondigital.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Covid Salud Certificados"
+        regex: "https://cvcovid.salud.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Portal SEAJAL"
+        regex: "https://devportalseajal.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Credencial Digital de Donadores (CETRAJAL)"
+        regex: "https://donadoresdeorganos.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Escoge Cuidarte"
+        regex: "https://escogecuidarte.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Escritorio de Ayuda SADM"
+        regex: "https://escritoriodeayuda.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "FILMA Jalisco"
+        regex: "https://filma.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Desconocido"
+        regex: "https://gisriosantiago.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "IIEG"
+        regex: "https://iieg.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "SEIIS (Indicador de Desigualdad)"
+        regex: "https://indicadoresdeigualdad.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Landing CGITG"
+        regex: "https://innovacion.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Escuadrón Verde"
+        regex: "https://inspeccionsemadet.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Jalisco Tech Hub Act"
+        regex: "https://investinjalisco.com"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Plataforma Sedeco"
+        regex: "https://investjal.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Mapa Jalisco"
+        regex: "https://mapa.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "IJCF No antecedentes Penales"
+        regex: "https://micrositio.seia.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Mi Movilidad"
+        regex: "https://mimovilidad.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Nidos de Lluvia"
+        regex: "https://nidosdelluvia.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Owncloud"
+        regex: "https://owncloud.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "ID Jalisco"
+        regex: "https://panel.id.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Panel Jalisco"
+        regex: "https://panel.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Panel Nidos de Lluvia"
+        regex: "https://panel.nidosdelluvia.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Panel Dependencias"
+        regex: "https://paneldependencias.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Panel Inclusión Digital"
+        regex: "https://panelinclusion.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Panel Periódico Oficial"
+        regex: "https://panelperiodico.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Periódico Oficial"
+        regex: "https://periodicooficial.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "PLAi"
+        regex: "https://plai.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Plataforma Educativa"
+        regex: "https://plataformaeducativa.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Directorio de Talento"
+        regex: "https://portaldirtalento.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Primera Infancia (Primeros 1000 días)"
+        regex: "https://primeros1000dias.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Yo Jalisco"
+        regex: "https://programamipasaje.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "APPrende"
+        regex: "https://recreadigital.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Red Jalisco Landing"
+        regex: "https://red.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Jalisco te Necesita"
+        regex: "https://registrotenecesitamos.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "REPCA"
+        regex: "https://repca.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Registro Publico de Propiedad"
+        regex: "https://rppcenlinea.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Rumbo a la Igualdad"
+        regex: "https://rumboalaigualdad.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Credencial Única Agropecuaria CUA"
+        regex: "https://sader.cua.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "SAFOP (Sistema de Avance Físico de Obra Pública)"
+        regex: "https://safop.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Seguro Salud Jalisco"
+        regex: "https://segurosalud.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "SICyT"
+        regex: "https://sicyt.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "SIER"
+        regex: "https://sier.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "MRVMECO Cambio Climático Panel"
+        regex: "https://simerev-admin.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "MRVMECO Cambio Climático"
+        regex: "https://simerev.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Secretaria de Infraestructura y Obra Publica"
+        regex: "https://siop.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Sisovid COBUPEJ"
+        regex: "https://sisovid.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "DIF Jalisco"
+        regex: "https://sistemadif.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Transparencia"
+        regex: "https://transparencia.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Transparencia"
+        regex: "https://transparenciasitgej.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Listo Jalisco"
+        regex: "https://utiles.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Vacunación Jalisco"
+        regex: "https://vacunacion.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Ventanilla Digital Jalisco"
+        regex: "https://ventanilladigital.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Verificación Responsable"
+        regex: "https://verificacionresponsable.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Registro estatal de personas desaparecidas"
+        regex: "https://version-publica-repd.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Pagina Desarrollador"
         regex: "https://vinsmake.dev"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "SEMADET"
+        regex: "https://visorsantiago.jalisco.gob.mx"
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Visor Urbano Jalisco"
+        regex: "https://visorurbano.jalisco.gob.mx"
+
+
+
+
+
 
         # Recolectar errores como métricas
     metric_relabel_configs:
