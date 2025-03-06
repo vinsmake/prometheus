@@ -86,6 +86,8 @@ scrape_configs:
           - "https://innovacion.jalisco.gob.mx"
           - "https://sier.jalisco.gob.mx"
 
+
+
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target # Define el target real
@@ -94,8 +96,16 @@ scrape_configs:
       - target_label: __address__
         replacement: "blackbox:9115"
 
+        # Alias
+      - source_labels: [__param_target]
+        target_label: alias
+        replacement: "Sitio desarrollador"
+        regex: "https://vinsmake.dev"
+
         # Recolectar errores como métricas
     metric_relabel_configs:
       - source_labels: [probe_http_status_code]
         regex: ".*"
         target_label: http_status
+
+
