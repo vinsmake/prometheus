@@ -1,0 +1,4 @@
+prometheus/data/chunks_head/* filter=lfs diff=lfs merge=lfs -text
+prometheus/prometheus.exe filter=lfs diff=lfs merge=lfs -text
+prometheus/promtool.exe filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
