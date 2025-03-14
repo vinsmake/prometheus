@@ -1,0 +1,42 @@
+services:
+  - name: prometheus
+    type: web
+    env: docker
+    repo: https://github.com/vinsmake/prometheus.git
+    branch: main
+    rootDir: prometheus
+    plan: free
+    region: oregon
+    envVars:
+      - key: PROMETHEUS_CONFIG
+        value: "/etc/prometheus/prometheus.yml"
+    dockerfilePath: prometheus/Dockerfile
+
+  - name: grafana
+    type: web
+    env: docker
+    repo: https://github.com/vinsmake/prometheus.git
+    branch: main
+    rootDir: grafana
+    plan: free
+    region: oregon
+    envVars:
+      - key: GF_SECURITY_ADMIN_USER
+        value: "admin"
+      - key: GF_SECURITY_ADMIN_PASSWORD
+        value: "admin"
+      - key: GF_SERVER_ROOT_URL
+        value: "http://localhost:3000/"
+      - key: GF_SERVER_SERVE_FROM_SUB_PATH
+        value: "false"
+    dockerfilePath: grafana/Dockerfile
+
+  - name: blackbox
+    type: web
+    env: docker
+    repo: https://github.com/vinsmake/prometheus.git
+    branch: main
+    rootDir: blackbox
+    plan: free
+    region: oregon
+    dockerfilePath: blackbox/Dockerfile
